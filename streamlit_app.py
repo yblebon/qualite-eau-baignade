@@ -71,7 +71,7 @@ data = {
 
 df = pd.DataFrame.from_dict(data)
 df['date'] = pd.to_datetime(df['date'])
-df['diff'] = ( df['date'] - date['date'].shift()).dt.days
+df['diff'] = ( df['date'].shift(-1) - date['date']).dt.days
 st.dataframe(df)
 
 
