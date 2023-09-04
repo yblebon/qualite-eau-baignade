@@ -4,7 +4,9 @@ import numpy as np
 import math
 import random
 
-st.write('Hi!')
+st.info("""
+- <15 and <16 are considered as 0,
+""", *, icon=None)
 data = {
  'date': [
   "03/01/23", 
@@ -67,6 +69,7 @@ data = {
 
 df = pd.DataFrame.from_dict(data)
 df['date'] = pd.to_datetime(df['date'])
+df['diff'] = ( df['date'] - date['date'].shift()).days
 st.dataframe(df)
 
 
