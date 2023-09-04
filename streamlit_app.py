@@ -36,7 +36,7 @@ data = {
  ]
 }
 
-df = pd.Dataframe.from_dict(data)
+df = pd.DataFrame.from_dict(data)
 
 st.dataframe(df)
 
