@@ -81,7 +81,7 @@ df['date'] = pd.to_datetime(df['date'], format="%d/%m/%y")
 
 
 
-df['diff'] = df['date'].diff().dt.days
+df['days diff'] = df['date'].diff().dt.days
 
 st.dataframe(df)
 
