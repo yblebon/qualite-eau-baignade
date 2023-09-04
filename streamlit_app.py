@@ -7,7 +7,7 @@ import random
 st.title("""
 QUALITE DES EAUX DE BAIGNADE
 SAINT LEU: Plage citerne quarante-six 2023 prelevement 
-"""")
+""")
 st.warning("""
 - <15 and <16 are considered as 0,
 - notice double 23 index
