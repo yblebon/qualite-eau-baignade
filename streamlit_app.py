@@ -14,14 +14,14 @@ st.header("""
 Source de donnees
 """)
 
-image = Image.open('IMG_2367.jpeg')
-st.image(image, caption='Source')
-
 st.warning("""
 - <15 and <16 are considered as 0,
 - notice double 23 index
 - last coli value is not visible 
 """, icon="🚨")
+
+image = Image.open('IMG_2367.jpeg')
+st.image(image, caption='Source')
           
 data = {
  'date': [
