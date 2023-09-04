@@ -81,7 +81,9 @@ df['days diff'] = df['date'].diff().dt.days
 
 st.dataframe(df)
 
-
+st.header("""
+Delai entre prelevements en Jours
+""")
 st.line_chart(
     df,
     x = 'date',
