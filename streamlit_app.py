@@ -66,7 +66,7 @@ data = {
 }
 
 df = pd.DataFrame.from_dict(data)
-
+df['date'] = pd.to_datetime(df['date'])
 st.dataframe(df)
 
 
