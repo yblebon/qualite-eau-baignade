@@ -6,6 +6,8 @@ import random
 
 st.info("""
 - <15 and <16 are considered as 0,
+- notice double 23 index
+- last coli value is not visible 
 """, icon=None)
 data = {
  'date': [
@@ -69,7 +71,7 @@ data = {
 
 df = pd.DataFrame.from_dict(data)
 df['date'] = pd.to_datetime(df['date'])
-df['diff'] = ( df['date'] - date['date'].shift()).days
+df['diff'] = ( df['date'] - date['date'].shift()).dt.days
 st.dataframe(df)
 
 
