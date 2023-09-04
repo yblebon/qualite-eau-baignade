@@ -10,10 +10,12 @@ QUALITE DES EAUX DE BAIGNADE
 SAINT LEU: Plage citerne quarante-six 2023 prelevement 
 """)
 
+st.header("""
+Source de donnees
+""")
 
-
-image = Image.open('sunrise.jpg')
-st.image(image, caption='source.jpeg')
+image = Image.open('IMG_2367.jpeg')
+st.image(image, caption='Source')
 
 st.warning("""
 - <15 and <16 are considered as 0,
