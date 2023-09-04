@@ -71,7 +71,7 @@ data = {
 }
 
 df = pd.DataFrame.from_dict(data)
-df['date'] = pd.to_datetime(df['date'])
+df['date'] = pd.to_datetime(df['date'], format="%d/%m/%y")
 
 
 
