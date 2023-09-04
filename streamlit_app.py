@@ -90,6 +90,16 @@ df['days diff'] = df['date'].diff().dt.days
 
 st.dataframe(df)
 
+
+st.header("""
+Valeur prelevee de Escherichia coli, <15 et <16 etant considere comme zero
+""")
+st.line_chart(
+    df,
+    x = 'date',
+    y = 'escherichia coli'
+)
+
 st.header("""
 Delai entre prelevements en Jours
 """)
