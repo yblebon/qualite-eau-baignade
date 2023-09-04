@@ -3,11 +3,18 @@ import pandas as pd
 import numpy as np
 import math
 import random
+from PIL import Image
 
 st.title("""
 QUALITE DES EAUX DE BAIGNADE
 SAINT LEU: Plage citerne quarante-six 2023 prelevement 
 """)
+
+
+
+image = Image.open('sunrise.jpg')
+st.image(image, caption='source.jpeg')
+
 st.warning("""
 - <15 and <16 are considered as 0,
 - notice double 23 index
