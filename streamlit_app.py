@@ -77,13 +77,15 @@ data = {
 df = pd.DataFrame.from_dict(data)
 df['date'] = pd.to_datetime(df['date'], format="%d/%m/%y")
 
-
-
-
-
 df['days diff'] = df['date'].diff().dt.days
 
 st.dataframe(df)
 
+
+st.line_chart(
+    df,
+    x = 'date',
+    y = 'days diff'
+)
 
 
