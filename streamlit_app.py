@@ -8,7 +8,8 @@ st.warning("""
 - <15 and <16 are considered as 0,
 - notice double 23 index
 - last coli value is not visible 
-""", icon="🚨"
+""", icon="🚨")
+          
 data = {
  'date': [
   "03/01/23", 
