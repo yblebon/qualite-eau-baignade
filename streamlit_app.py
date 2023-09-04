@@ -75,7 +75,9 @@ df['date'] = pd.to_datetime(df['date'])
 
 st.dataframe(df)
 
-df['diff'] = ( df['date'] - date['date'].shift(1))
+
+
+df['diff'] = df['date'].diff()
 
 
 
