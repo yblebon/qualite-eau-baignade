@@ -6,7 +6,7 @@ import random
 
 st.info("""
 - <15 and <16 are considered as 0,
-""", *, icon=None)
+""", icon=None)
 data = {
  'date': [
   "03/01/23", 
