@@ -16,7 +16,7 @@ plages = {
     'SAINT LEU: Plage citerne quarante-six 2023 prelevement': {
         'id': 1,
         'img': 'IMG_2367.jpeg',
-        'data': leu_data.data
+        'data': leu_data
     },
     
     'SAINT GILLES: Plage ermitage 2022 prelevement': {
