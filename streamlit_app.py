@@ -11,11 +11,17 @@ st.title("""
 QUALITE DES EAUX DE BAIGNADE
 """)
 
+plages = {
+    'SAINT LEU: Plage citerne quarante-six 2023 prelevement': 1
+    'SAINT GILLES: Plage ermitage 2022 prelevement': 2
+}
+
 option = st.selectbox(
     'Choose the beach?',
-    ('SAINT LEU: Plage citerne quarante-six 2023 prelevement', 'SAINT GILLES: Plage ermitage 2022 prelevement'))
+    plages.keys()
+)
 
-st.write('Plage:', option)
+plage_id = plages[option]
 
 st.header("""
 Source de donnees
@@ -27,7 +33,8 @@ st.warning("""
 - last coli value is not visible 
 """, icon="🚨")
 
-image = Image.open('IMG_2367.jpeg')
+if plage_id == 1: 
+   image = Image.open('IMG_2367.jpeg')
 st.image(image, caption='Source')
           
 data = {
