@@ -49,7 +49,7 @@ if plage_data['img']:
    st.image(image, caption='Source')
 
 
-if plage_data['data']:
+if plage_data['data'] !=  None:
   data = plage_data['data']
   df = pd.DataFrame.from_dict(data)
   df['date'] = pd.to_datetime(df['date'], format="%d/%m/%y")
