@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import math
 import random
+from leu import data as leu_data
 from PIL import Image
 
 
@@ -15,10 +16,14 @@ plages = {
     'SAINT LEU: Plage citerne quarante-six 2023 prelevement': {
         'id': 1,
         'img': 'IMG_2367.jpeg',
-        
+        'data': leu_data.data
     },
     
-    'SAINT GILLES: Plage ermitage 2022 prelevement': 2
+    'SAINT GILLES: Plage ermitage 2022 prelevement': {
+         'id': 2,
+        'img': 'IMG_0446.jpeg',
+        'data': None
+    }
 }
 
 option = st.selectbox(
@@ -26,7 +31,7 @@ option = st.selectbox(
     plages.keys()
 )
 
-plage_id = plages[option]
+plage_data = plages[option]
 
 st.header("""
 Source de donnees
@@ -38,40 +43,38 @@ st.warning("""
 - last coli value is not visible 
 """, icon="🚨")
 
-if plage_id == 2:
-    image_name = 'IMG_0446.jpeg'
-elif plage_id == 1:
-    image_name = 'IMG_2367.jpeg'
 
-image = Image.open(image_name)
-st.image(image, caption='Source')
-
-          
-
-df = pd.DataFrame.from_dict(data)
-df['date'] = pd.to_datetime(df['date'], format="%d/%m/%y")
-
-df['days diff'] = df['date'].diff().dt.days
-
-st.dataframe(df)
+if plage_data['img']:
+   image = Image.open(image_name)
+   st.image(image, caption='Source')
 
 
-st.header("""
-Valeur prelevee de Escherichia coli, <15 et <16 etant considere comme zero
-""")
-st.line_chart(
+if plage_data['data']:
+  data = plage_data['data']
+  df = pd.DataFrame.from_dict(data)
+  df['date'] = pd.to_datetime(df['date'], format="%d/%m/%y")
+
+  df['days diff'] = df['date'].diff().dt.days
+
+  st.dataframe(df)
+
+
+  st.header("""
+  Valeur prelevee de Escherichia coli, <15 et <16 etant considere comme zero
+  """)
+  st.line_chart(
     df,
     x = 'date',
     y = 'escherichia coli'
-)
+  )
 
-st.header("""
-Delai entre prelevements en Jours
-""")
-st.line_chart(
+  st.header("""
+  Delai entre prelevements en Jours
+  """)
+  st.line_chart(
     df,
     x = 'date',
     y = 'days diff'
-)
+  )
 
 
