@@ -12,7 +12,7 @@ QUALITE DES EAUX DE BAIGNADE
 """)
 
 plages = {
-    'SAINT LEU: Plage citerne quarante-six 2023 prelevement': 1
+    'SAINT LEU: Plage citerne quarante-six 2023 prelevement': 1,
     'SAINT GILLES: Plage ermitage 2022 prelevement': 2
 }
 
@@ -33,9 +33,17 @@ st.warning("""
 - last coli value is not visible 
 """, icon="🚨")
 
-if plage_id == 1: 
-   image = Image.open('IMG_2367.jpeg')
+if plage_id == 2:
+    image_name = 'IMG_0446.jpeg'
+elif plage_id == 1:
+    image_name = 'IMG_2367.jpeg'
+
+image = Image.open(image_name)
 st.image(image, caption='Source')
+
+if plage_id == 2:
+    return
+
           
 data = {
  'date': [
