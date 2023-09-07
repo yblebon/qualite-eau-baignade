@@ -45,7 +45,7 @@ st.warning("""
 
 
 if plage_data['img']:
-   image = Image.open(image_name)
+   image = Image.open(plage_data['img'])
    st.image(image, caption='Source')
 
 
