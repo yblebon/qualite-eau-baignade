@@ -5,17 +5,17 @@ import math
 import random
 from PIL import Image
 
-option = st.selectbox(
-    'Choose the beach?',
-    ('SAINT LEU: Plage citerne quarante-six 2023 prelevement', 'SAINT GILLES: Plage ermitage 2022 prelevement'))
-
-st.write('You selected:', option)
 
 
 st.title("""
 QUALITE DES EAUX DE BAIGNADE
-SAINT LEU: Plage citerne quarante-six 2023 prelevement 
 """)
+
+option = st.selectbox(
+    'Choose the beach?',
+    ('SAINT LEU: Plage citerne quarante-six 2023 prelevement', 'SAINT GILLES: Plage ermitage 2022 prelevement'))
+
+st.write('Plage:', option)
 
 st.header("""
 Source de donnees
