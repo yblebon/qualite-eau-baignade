@@ -17,7 +17,7 @@ plages = {
 }
 
 option = st.selectbox(
-    'Choose the beach?',
+    'Sélectionner une plage:',
     plages.keys()
 )
 
@@ -40,9 +40,6 @@ elif plage_id == 1:
 
 image = Image.open(image_name)
 st.image(image, caption='Source')
-
-if plage_id == 2:
-    return
 
           
 data = {
