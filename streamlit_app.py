@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import math
 import random
-import data import leu as leu_data
+from data import leu as leu_data
 from PIL import Image
 
 
