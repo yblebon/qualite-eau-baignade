@@ -1,3 +1,4 @@
+comment = ""
 data = {
   'date': [
     '05/10/21',
@@ -11,7 +12,6 @@ data = {
     '21/12/21',
     '28/12/21'
   ],
-  'comment': "",
   'escherichia coli': [
     30,
     61,
