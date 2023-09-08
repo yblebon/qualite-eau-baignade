@@ -34,8 +34,11 @@ plages = {
     },
     'SAINT GILLES: Plage des roches noires': {
          'id': 3,
-         'warning': None,
-        'img': 'IMG_0445.jpeg',
+         'warning': """
+           - 04/01/23 prelevement index 13
+           - 17/01/23 prelevement index 12
+         """,
+        'img': 'IMG_2479.jpeg',
         'data': gilles_data_2
     }
 }
