@@ -5,6 +5,7 @@ import math
 import random
 from leu import data as leu_data
 from gilles import data as gilles_data
+from gilles_2 import data as gilles_data_2
 from PIL import Image
 
 
@@ -30,6 +31,12 @@ plages = {
          'warning': None,
         'img': 'IMG_0445.jpeg',
         'data': gilles_data
+    },
+    'SAINT GILLES: Plage des roches noires': {
+         'id': 3,
+         'warning': None,
+        'img': 'IMG_0445.jpeg',
+        'data': gilles_data_2
     }
 }
 
