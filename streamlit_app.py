@@ -26,6 +26,7 @@ plages = {
     
     'SAINT GILLES: Plage ermitage village': {
          'id': 2,
+         'warning': None,
         'img': 'IMG_0445.jpeg',
         'data': None
     }
