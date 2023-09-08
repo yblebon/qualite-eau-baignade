@@ -4,6 +4,7 @@ import numpy as np
 import math
 import random
 from leu import data as leu_data
+from gilles import data as gilles_data
 from PIL import Image
 
 
@@ -28,7 +29,7 @@ plages = {
          'id': 2,
          'warning': None,
         'img': 'IMG_0445.jpeg',
-        'data': None
+        'data': gilles_data
     }
 }
 
