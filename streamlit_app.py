@@ -16,7 +16,12 @@ plages = {
     'SAINT LEU: Plage citerne quarante-six': {
         'id': 1,
         'img': 'IMG_2367.jpeg',
-        'data': leu_data
+        'data': leu_data,
+        'warning': """
+           - <15 and <16 are considered as 0,
+           - notice double 23 index
+           - last coli value is not visible
+        """
     },
     
     'SAINT GILLES: Plage ermitage village': {
@@ -37,11 +42,8 @@ st.header("""
 Source de donnees
 """)
 
-st.warning("""
-- <15 and <16 are considered as 0,
-- notice double 23 index
-- last coli value is not visible 
-""", icon="🚨")
+if plage_data["warning"]:
+   st.warning(plage_data["warning"], icon="🚨")
 
 
 if plage_data['img']:
