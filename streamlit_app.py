@@ -21,7 +21,7 @@ plages = {
     
     'SAINT GILLES: Plage ermitage 2022 prelevement': {
          'id': 2,
-        'img': 'IMG_0446.jpeg',
+        'img': 'IMG_0445.jpeg',
         'data': None
     }
 }
