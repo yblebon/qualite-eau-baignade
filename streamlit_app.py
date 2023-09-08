@@ -9,17 +9,17 @@ from PIL import Image
 
 
 st.title("""
-QUALITE DES EAUX DE BAIGNADE
+PRELEVEMENT QUALITE DES EAUX DE BAIGNADE 
 """)
 
 plages = {
-    'SAINT LEU: Plage citerne quarante-six 2023 prelevement': {
+    'SAINT LEU: Plage citerne quarante-six': {
         'id': 1,
         'img': 'IMG_2367.jpeg',
         'data': leu_data
     },
     
-    'SAINT GILLES: Plage ermitage 2022 prelevement': {
+    'SAINT GILLES: Plage ermitage village': {
          'id': 2,
         'img': 'IMG_0445.jpeg',
         'data': None
