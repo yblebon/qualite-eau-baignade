@@ -44,6 +44,7 @@ plages = {
     'SAINT LEU: Plage du centre ville': {
         'id': 4,
         'warning': '',
+        'img': 'IMG_2522.jpeg',
         'data': 'https://yblebon-public.s3.eu-north-1.amazonaws.com/qualite-eau-baignade/stleu-centre.csv'
     }
 }
