@@ -72,7 +72,7 @@ if plage_data['img']:
 if plage_data['data'] !=  None:
   data = plage_data['data']
 
-  if data.startswith("https://"):
+  if isinstance(data, str) and data.startswith("https://"):
     df = pd.read_csv(data, sep=";", usecols=['date', 'escherichia coli'])
   else:
     df = pd.DataFrame.from_dict(data)
