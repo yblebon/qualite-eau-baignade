@@ -73,7 +73,7 @@ if plage_data['data'] !=  None:
   data = plage_data['data']
 
   if data.startswith("https://"):
-    df = pd.read_csv(s, sep=";", usecols=['date', 'escherichia coli'])
+    df = pd.read_csv(data, sep=";", usecols=['date', 'escherichia coli'])
   else:
     df = pd.DataFrame.from_dict(data)
       
