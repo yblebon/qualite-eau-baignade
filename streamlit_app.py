@@ -71,7 +71,12 @@ if plage_data['img']:
 
 if plage_data['data'] !=  None:
   data = plage_data['data']
-  df = pd.DataFrame.from_dict(data)
+
+  if data.startswith("https://"):
+    df = pd.read_csv(s, sep=";", usecols=['date', 'escherichia coli'])
+  else:
+    df = pd.DataFrame.from_dict(data)
+      
   df['date'] = pd.to_datetime(df['date'], format="%d/%m/%y")
   df = df.sort_values(by="date")
   df['days diff'] = df['date'].diff().dt.days
