@@ -10,7 +10,7 @@ from PIL import Image
 
 
 
-st.title("""
+st.sidebar.title("""
 PRELEVEMENT QUALITE DES EAUX DE BAIGNADE 
 """)
 
@@ -51,7 +51,7 @@ plages = {
     }
 }
 
-option = st.selectbox(
+option = st.sidebar.selectbox(
     'Sélectionner une plage:',
     plages.keys()
 )
