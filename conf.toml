@@ -1,0 +1,34 @@
+["ST LEU"]
+  [["ST LEU".plages]]
+    nom = "Plage citerne quarante-six"
+    img = "IMG_2367.jpeg"
+    data = ""
+    warning = """
+      - <15 and <16 are considered as 0,
+      - notice double 23 index
+      - last coli value is not visible
+    """
+
+  [["ST LEU".plages]]
+    nom = "Plage du centre ville"
+    img = "IMG_2522.jpeg"
+    data = "https://yblebon-public.s3.eu-north-1.amazonaws.com/qualite-eau-baignade/stleu-centre.csv"
+    warning = """
+      - notice double 24 index
+    """
+    
+["ST GILLES"]
+  [["ST GILLES".plages]]
+    nom = "Plage ermitage village"
+    img = "IMG_0445.jpeg"
+    data = ""
+    warning = ""
+
+ [["ST GILLES".plages]]
+    nom = "Plage des roches noires"
+    img = "IMG_2479.jpeg"
+    data = ""
+    warning = """
+      - 04/01/23 prelevement index 13
+      - 17/01/23 prelevement index 12
+    """
