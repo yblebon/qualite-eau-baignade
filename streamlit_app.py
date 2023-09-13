@@ -83,7 +83,7 @@ if plage_data['data'] !=  None:
   df = df.sort_values(by="date")
   df['days diff'] = df['date'].diff().dt.days
 
-  st.dataframe(df)
+  st.dataframe(df, use_container_width=True)
 
 
   st.header("""
