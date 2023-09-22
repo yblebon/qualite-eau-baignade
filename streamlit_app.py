@@ -47,7 +47,7 @@ plages = {
            - notice double 24 index
         """,
         'img': 'IMG_2522.jpeg',
-        'data': 'https://yblebon-public.s3.eu-north-1.amazonaws.com/qualite-eau-baignade/stleu-centre.csv'
+        'data': 'https://ipfs.filebase.io/ipfs/QmSjj2zhAfSyK2cQdZVgir9F6PDUq7Upq2xM7zaWTKK5Nh'
     }
 }
 
