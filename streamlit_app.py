@@ -40,14 +40,6 @@ plages = {
          """,
         'img': 'IMG_2479.jpeg',
         'data': gilles_data_2
-    },
-    'SAINT LEU: Plage du centre ville': {
-        'id': 4,
-        'warning': """
-           - notice double 24 index
-        """,
-        'img': 'IMG_2522.jpeg',
-        'data': 'https://ipfs.filebase.io/ipfs/QmSjj2zhAfSyK2cQdZVgir9F6PDUq7Upq2xM7zaWTKK5Nh'
     }
 }
 
